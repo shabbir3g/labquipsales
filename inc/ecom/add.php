@@ -67,9 +67,11 @@
 		<div class="ProductContainer3">
 			<h3 class="GC37 ProductTitle"><?php the_title(); ?></h3>
 		</div>
-		<!--<div class="GC11 ProductIntroduction"><em>Solvent filtration:</em></div> -->
+		<div class="GC11 ProductIntroduction" role="equalheight-in-normalview" itemprop="description" id="ProductIntroduction-P225" style="color: rgb(36, 36, 36);"><?php echo wp_trim_words(get_the_content(), 5, false); ?></div>
 		<div id="ProductContainer2" class="ProductContainer2"> 
-			
+			<div class="GC13 sf-corner ProductMoreDetails" style="color: rgb(255, 255, 255);">
+				<a href="<?php echo the_permalink(); ?>">More details</a>
+			</div>
 		</div>
 	<?php 
 
@@ -79,6 +81,10 @@
 
 
 	add_filter( 'woocommerce_product_add_to_cart_text' , 'custom_woocommerce_product_add_to_cart_text' );
+	
+	
+	
+	
 /**
  * custom_woocommerce_template_loop_add_to_cart
 */
@@ -89,19 +95,19 @@ function custom_woocommerce_product_add_to_cart_text() {
 	
 	switch ( $product_type ) {
 		case 'external':
-			return __( 'Buy product', 'woocommerce' );
+			return __( 'More details', 'woocommerce' );
 		break;
 		case 'grouped':
-			return __( 'View products', 'woocommerce' );
+			return __( 'More details', 'woocommerce' );
 		break;
 		case 'simple':
-			return __( 'Add to cart', 'woocommerce' );
+			return __( 'More details', 'woocommerce' );
 		break;
 		case 'variable':
 			return __( 'More details', 'woocommerce' );
 		break;
 		default:
-			return __( 'Read more', 'woocommerce' );
+			return __( 'More details', 'woocommerce' );
 	}
 	
 }
