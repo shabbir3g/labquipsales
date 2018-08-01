@@ -19,3 +19,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	-webkit-box-shadow: none;
 	box-shadow: none;
 }
+.ImgLink img {
+	display: block;
+	width: inherit;
+}
