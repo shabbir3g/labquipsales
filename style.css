@@ -10,3 +10,12 @@ License URI: LICENSE
 Text Domain: labquipsales
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-labquipsales
 */
+
+
+.woocommerce div.product div.images img {
+	display: block;
+	width: inherit;
+	height: auto;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
