@@ -106,7 +106,7 @@ ul.main-menu li ul li a:hover{
 
 .ImgLink img {
 	display: block;
-	width: 100%;
+	/* width: 100%; */
 }
 .Banner .gallery-buttons {
 	bottom: 65px;
